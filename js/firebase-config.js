@@ -10,7 +10,7 @@ const firebaseConfig = {
   authDomain: "ishitrackers.firebaseapp.com",
   databaseURL: "https://ishitrackers-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "ishitrackers",
-  storageBucket: "ishitrackers.appspot.com",
+  storageBucket: "storageBucket: "ishitrackers.firebasestorage.app",
   messagingSenderId: "388581548889",
   appId: "1:388581548889:web:41d4eb28d6a2fa7e176248"
 };
