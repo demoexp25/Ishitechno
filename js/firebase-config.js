@@ -5,18 +5,32 @@
 
 // TODO: Replace with your actual Firebase Web App config
 // (Firebase Console -> Project Settings -> General -> Your apps -> SDK config)
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBsyw72Pt2jxcuzSzA_qh6uvbe7EwegZIg",
+  apiKey: "AIzaSyBsyw72Pt2jxcuzSzA_qh6uvbe7EWegZIg",
   authDomain: "ishitrackers.firebaseapp.com",
   databaseURL: "https://ishitrackers-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "ishitrackers",
-  storageBucket: "storageBucket: "ishitrackers.firebasestorage.app",
+  storageBucket: "ishitrackers.firebasestorage.app",
   messagingSenderId: "388581548889",
-  appId: "1:388581548889:web:41d4eb28d6a2fa7e176248"
+  appId: "1:388581548889:web:41d4eb28d6a2fa7e176248",
+  measurementId: "G-L9GTM62YTG"
 };
 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 // Initialize Firebase (compat SDK - works directly on GitHub Pages, no bundler needed)
-firebase.initializeApp(firebaseConfig);
+
 
 const auth = firebase.auth();
 const db = firebase.database();
